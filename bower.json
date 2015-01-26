@@ -1,0 +1,22 @@
+{
+  "name": "ddm-panels",
+  "homepage": "https://github.com/deseretdigital-ui/ddm-panels",
+  "authors": [
+    "Russell Ahlstrom <rahlstrom@deseretdigital.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests",
+    "gulp",
+    "gulpfile.js",
+    "src"
+  ],
+  "main": "dist/ddmPanels.js",
+  "dependencies": {
+    "react": "~0.12.2"
+  }
+}
