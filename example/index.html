@@ -6,25 +6,45 @@
   <meta name="apple-mobile-web-app-capable" content="yes">
 
   <title>DDM Panel Example</title>
-  <meta name="description" content="HelloWorld Example" />
+  <meta name="description" content="Panel Example" />
 
   <link href="index.css" rel="stylesheet" />
 
   <script src="https://fb.me/react-with-addons-0.12.2.js"></script>
   <script src="https://fb.me/JSXTransformer-0.12.2.js"></script>
 
-  <script src="HelloWorld.js"></script>
+  <script src="ddmPanel.js"></script>
 
 </head>
-<body>
+<body class="ksl-styles">
 
   <h1>Example</h1>
 
+  <div id="ddmResponsivePanelExample"></div>
   <div id="ddmPanelExample"></div>
 
   <script type="text/jsx">
     React.render(
-      <Panel />,
+      <ResponsivePanel>
+        <PanelHead>
+          <h2 className="header header--h2">DDM Responsive Panel</h2>
+        </PanelHead>
+        <PanelBody>
+          <p>This is our responsive panel</p>
+        </PanelBody>
+      </ResponsivePanel>,
+      document.getElementById('ddmResponsivePanelExample')
+    );
+
+    React.render(
+      <Panel>
+        <PanelHead>
+          <h2 className="header header--h2">DDM Normal Panel</h2>
+        </PanelHead>
+        <PanelBody>
+          <p>This is our normal panel</p>
+        </PanelBody>
+      </Panel>,
       document.getElementById('ddmPanelExample')
     );
   </script>

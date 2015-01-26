@@ -18,5 +18,8 @@
   "main": "dist/ddmPanels.js",
   "dependencies": {
     "react": "~0.12.2"
+  },
+  "devDependencies": {
+    "media-match": "~2.0.2"
   }
 }
