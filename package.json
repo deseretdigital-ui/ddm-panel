@@ -1,6 +1,6 @@
 {
   "name": "ddm-panel",
-  "version": "0.0.1",
+  "version": "1.0.1",
   "description": "Panel ",
   "main": "dist/ddmPanel.js",
   "scripts": {
@@ -18,7 +18,10 @@
   "homepage": "https://github.com/deseretdigital-ui/ddm-panel",
   "devDependencies": {
     "autoprefixer-loader": "^1.0.0",
+    "bower-webpack-plugin": "^0.1.5",
+    "class-name-mixin": "^1.0.0",
     "css-loader": "^0.9.0",
+    "ddm-collapsible": "^0.1.7",
     "gulp": "^3.8.10",
     "gulp-gh-pages": "^0.4.0",
     "gulp-webpack": "^1.1.0",

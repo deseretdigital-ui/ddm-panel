@@ -1,0 +1,55 @@
+@import url(http://fonts.googleapis.com/css?family=Raleway:500,600,700,400,300);
+
+body {
+  font-family: 'raleway';
+  font-size: 14px;
+  line-height: 1.2;
+  color: #363636; }
+
+.header {
+font-weight: bold; }
+.header--h2 {
+  font-size: 22px; }
+
+.panel__head {
+  padding: 10px 20px;
+  background-color: #f1f1f1;
+  font-size: 22px;
+  color: #2354ac;
+  font-weight: normal; }
+  .panel__head h1, .panel__head h2, .panel__head h3, .panel__head h4, .panel__head h5, .panel__head h6 {
+    color: #2354ac;
+    font-weight: normal;
+    margin: 0; }
+.panel__body {
+  padding: 20px; }
+  .panel__body :first-child, .panel__body :last-child {
+    padding-top: 0;
+    margin-top: 0; }
+
+.ddm-collapsible {
+  margin-bottom: 2px;
+}
+
+.ddm-collapsible__head {
+  font-size: 18px;
+  color: #fff;
+  background: #5b92f4;
+
+  padding: 10px;
+}
+
+.ddm-collapsible__head h2 {
+  margin: 0;
+  font-weight: normal;
+}
+
+.ddm-collapsible--open .ddm-collapsible__head,
+.ddm-collapsible--opening .ddm-collapsible__head {
+  background: #2354ac;
+}
+
+.ksl-styles .ddm-collapsible__arrow {
+  top: 10px;
+  right: 10px;
+}
