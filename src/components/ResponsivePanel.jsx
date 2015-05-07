@@ -4,6 +4,9 @@ var ClassNameMixin = require('class-name-mixin').ClassNameMixin;
 var mediaMatch = require('media-match/media.match.js');
 
 var Panel = require('./Panel');
+var PanelHead = require('./PanelHead');
+var PanelBody = require('./PanelBody');
+
 var {Collapsible, CollapsibleHead, CollapsibleBody} = require('ddm-collapsible');
 
 var ResponsivePanel = React.createClass({
