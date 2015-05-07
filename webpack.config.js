@@ -39,6 +39,6 @@ module.exports = {
   },
   plugins: [
     new BowerWebpackPlugin(),
-    //new webpack.optimize.UglifyJsPlugin()
+    new webpack.optimize.UglifyJsPlugin()
   ]
 }
