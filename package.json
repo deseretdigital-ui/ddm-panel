@@ -1,6 +1,6 @@
 {
   "name": "ddm-panel",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "description": "Panel ",
   "main": "dist/ddmPanel.js",
   "scripts": {
