@@ -95,6 +95,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	var ClassNameMixin = __webpack_require__(7).ClassNameMixin;
 	var mediaMatch = __webpack_require__(6);
 
+	var Panel = __webpack_require__(1);
 	var $__0=    __webpack_require__(9),Collapsible=$__0.Collapsible,CollapsibleHead=$__0.CollapsibleHead,CollapsibleBody=$__0.CollapsibleBody;
 
 	var ResponsivePanel = React.createClass({displayName: "ResponsivePanel",
