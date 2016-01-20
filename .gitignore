@@ -3,3 +3,4 @@ bower_components
 example/*
 !example/index.html
 !example/index.css
+!example/demo.jsx

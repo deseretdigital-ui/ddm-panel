@@ -1,12 +1,11 @@
-var react = require('react/addons');
-var ClassNameMixin = require('class-name-mixin').ClassNameMixin;
+var react = require('react');
+var combineClassName = require('../utils/combineClassName');
 
 var PanelHead = React.createClass({
-  mixins: [ClassNameMixin],
 
   render: function() {
     return (
-      <header className={this.getClassName()}>
+      <header className={combineClassName.bind(this)()}>
         {this.props.children}
       </header>
     );
