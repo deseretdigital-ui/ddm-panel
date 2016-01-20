@@ -10,8 +10,8 @@
 
   <link href="index.css" rel="stylesheet" />
 
-  <script src="https://fb.me/react-with-addons-0.12.2.js"></script>
-  <script src="https://fb.me/JSXTransformer-0.12.2.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.14.6/react.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.14.6/react-dom.js"></script>
 
   <script src="ddmPanel.js"></script>
 
@@ -23,31 +23,7 @@
   <div id="ddmResponsivePanelExample"></div>
   <div id="ddmPanelExample"></div>
 
-  <script type="text/jsx">
-    React.render(
-      <ResponsivePanel>
-        <PanelHead>
-          <h2 className="header header--h2">DDM Responsive Panel</h2>
-        </PanelHead>
-        <PanelBody>
-          <p>This is our responsive panel</p>
-        </PanelBody>
-      </ResponsivePanel>,
-      document.getElementById('ddmResponsivePanelExample')
-    );
-
-    React.render(
-      <Panel>
-        <PanelHead>
-          <h2 className="header header--h2">DDM Normal Panel</h2>
-        </PanelHead>
-        <PanelBody>
-          <p>This is our normal panel</p>
-        </PanelBody>
-      </Panel>,
-      document.getElementById('ddmPanelExample')
-    );
-  </script>
+  <script src="demo.js"></script>
 
 </body>
 </html>

@@ -1,6 +1,6 @@
 var gulp = require('gulp');
 var config = require('../../webpack.config.js');
-var webpack = require('gulp-webpack');
+var webpack = require('webpack-stream');
 
 module.exports = function (options) {
   config.watch = options.watch || false;

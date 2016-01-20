@@ -1,6 +1,6 @@
-var react = require('react/addons');
+var react = require('react');
 
-var ClassNameMixin = require('class-name-mixin').ClassNameMixin;
+var combineClassName = require('../utils/combineClassName');
 var mediaMatch = require('media-match/media.match.js');
 
 var Panel = require('./Panel');
@@ -10,7 +10,6 @@ var PanelBody = require('./PanelBody');
 var {Collapsible, CollapsibleHead, CollapsibleBody} = require('ddm-collapsible');
 
 var ResponsivePanel = React.createClass({
-  mixins: [ClassNameMixin],
   mediaQuery: null,
 
   getDefaultProps: function() {
@@ -59,18 +58,18 @@ var ResponsivePanel = React.createClass({
 
   renderAsPanel: function() {
     return (
-      <Panel className={this.getClassName()}>
+      <Panel className={combineClassName.bind(this)()}>
         {this.props.children}
       </Panel>
     );
   },
 
   renderAsCollapsible: function() {
-    collapsibleHead = this.getCollapsibleHead();
-    collapsibleBody = this.getCollapsibleBody();
+    var collapsibleHead = this.getCollapsibleHead();
+    var collapsibleBody = this.getCollapsibleBody();
 
     return (
-      <Collapsible className={this.getClassName()}>
+      <Collapsible className={combineClassName.bind(this)()}>
         {collapsibleHead}
         {collapsibleBody}
       </Collapsible>
@@ -81,7 +80,7 @@ var ResponsivePanel = React.createClass({
     var collapsibleHead;
 
     React.Children.forEach(this.props.children, function(child) {
-      if (child.type == PanelHead.type) {
+      if (child.type == PanelHead) {
         collapsibleHead = (
           <CollapsibleHead {...child.props}>{child.props.children}</CollapsibleHead>
         );
@@ -95,7 +94,7 @@ var ResponsivePanel = React.createClass({
     var collapsibleBody;
 
     React.Children.forEach(this.props.children, function(child) {
-      if (child.type == PanelBody.type) {
+      if (child.type == PanelBody) {
         collapsibleBody = (
           <CollapsibleBody {...child.props}>{child.props.children}</CollapsibleBody>
         );
