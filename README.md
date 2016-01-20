@@ -1,3 +1,6 @@
+# Demo
+[Demo Here](http://ui.deseretdigital.com/ddm-panel/)
+
 # ddm-panel
 Panel component
 
